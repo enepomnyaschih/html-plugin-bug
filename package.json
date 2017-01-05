@@ -1,0 +1,10 @@
+{
+  "name": "html-plugin-bug",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "raw-loader": "0.5.1",
+    "html-webpack-plugin": "2.26.0",
+    "webpack": "1.14.0"
+  }
+}
