@@ -5,6 +5,7 @@
   "dependencies": {
     "raw-loader": "0.5.1",
     "html-webpack-plugin": "2.26.0",
+    "underscore-loader": "1.0.0",
     "webpack": "1.14.0"
   }
 }

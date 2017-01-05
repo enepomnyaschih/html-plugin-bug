@@ -12,19 +12,14 @@ module.exports = {
 
 	module: {
 		loaders: [
-			{ test: /\.html$/, loader: "raw-loader" } // <---- !!!!! PROBLEM ORIGIN !!!!!
-			/*
-			Changing it to
-			{ test: /\.jw.html$/, loader: "raw-loader" }
-			fixes the problem
-			*/
+			{ test: /\.html$/, loader: "raw-loader" }
 		]
 	},
 
 	plugins: [
 		new HtmlWebpackPlugin({
 			filename: "index.html",
-			template: "../template.html",
+			template: "!!underscore!./template.html", // <---- Different path
 			inject: "body",
 			title: "HTML Webpack Plugin demo",
 			suffix: ".min"
